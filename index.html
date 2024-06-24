@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia do Bordado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/bg-bordado-livre.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #4B1A1B;
+        }
+        .hero-section {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .hero-section h2 span {
+            color: #FF9500;
+        }
+        .hero-section .btn {
+            background-color: #28a745;
+            color: #fff;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+        .hero-section .btn:hover {
+            background-color: #218838;
+            transform: scale(1.1);
+        }
+        .pricing-info {
+            /* font-weight: bold; */
+            font-size: 1.2em;
+            color: #4B1A1B;
+        }
+        .embed-responsive-item {
+            border-radius: 15px;
+            border: 2px solid #FF9500;
+        }
+
+        /* SECTION 2 */
+
+        .highlight-section {
+        background-color: #FFEDDF;
+        padding: 40px 0;
+    }
+    .highlight-section .elementor-icon-box-icon {
+        margin-bottom: 15px;
+    }
+    .highlight-section .elementor-icon {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        line-height: 80px;
+        background-color: #FF9500;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        transition: transform 0.3s ease;
+    }
+    .highlight-section .elementor-icon-box:hover .elementor-icon {
+        transform: scale(1.1);
+    }
+    .highlight-section .elementor-icon-box-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #FF9500;
+    }
+    .highlight-section .elementor-icon-box-description {
+        font-size: 1.1em;
+        color: #4B1A1B;
+    }
+
+
+    /* SESSÃO 3 */
+    .highlight-section-3 {
+        background-color: #fff;
+        padding: 40px 0;
+    }
+    .highlight-section-3 .fine-text {
+        /* font-weight: 300; Fonte fina */
+        color: #4B1A1B;
+        font-size: 1.1em;
+    }
+    .highlight-section-3 .heading h2 {
+        font-size: 2em;
+        color: #4B1A1B;
+    }
+    .highlight-section-3 .heading .highlight {
+        color: #FF9500;
+    }
+    .highlight-section-3 .text-editor p {
+        color: #4B1A1B;
+        font-size: 1em;
+    }
+    .highlight-section-3 .image-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* sessão 4 */
+    
+    .student-work-section {
+        background-color: #FFEDDF;
+        padding: 40px 0;
+    }
+    .student-work-section .highlight {
+        color: #FF9500;
+    }
+    .student-work-section .fine-text {
+        font-weight: 300;
+        color: #4B1A1B;
+        font-size: 1.1em;
+    }
+    .student-work-section h2 {
+        font-size: 2em;
+        color: #4B1A1B;
+    }
+    .carousel-item img {
+        border-radius: 8px;
+        margin: 0 auto; /* Centraliza as imagens */
+    }
+
+
+    /* sessão 5 */
+
+    .advantages-section {
+        background-color: #fff;
+        padding: 40px 0;
+    }
+    .advantages-section .highlight {
+        color: #FF9500;
+    }
+    .advantages-section .fine-text {
+        font-weight: 300;
+        color: #4B1A1B;
+        font-size: 1.1em;
+    }
+    .advantages-section .spaced-text {
+        letter-spacing: 0.05em;
+    }
+    .advantages-section h2 {
+        font-size: 2em;
+        color: #4B1A1B;
+        margin-top: 20px;
+    }
+    .advantages-section p {
+        color: #4B1A1B;
+        font-size: 1.1em;
+    }
+    .interactive-image {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .interactive-image img {
+        transition: transform 0.3s ease, top 0.3s ease;
+        border-radius: 8px;
+        position: relative;
+    }
+    .interactive-image:hover img {
+        transform: translateY(-10px);
+    }
+
+/* sessão 6 */
+
+.unique-testimonial-section {
+        background-color: #FFEDDF;
+        padding: 40px 0;
+    }
+    .unique-testimonial-section .unique-highlight {
+        color: #FF9500;
+    }
+    .unique-testimonial-section .unique-fine-text {
+        font-weight: 300;
+        color: #4B1A1B;
+        font-size: 1.1em;
+    }
+    .unique-testimonial-section .unique-spaced-text {
+        letter-spacing: 0.05em;
+    }
+    .unique-testimonial-section h2 {
+        font-size: 2em;
+        color: #4B1A1B;
+    }
+    .unique-carousel-container {
+        overflow: hidden;
+        position: relative;
+    }
+    .unique-carousel {
+        display: flex;
+        animation: unique-scroll 20s linear infinite;
+    }
+    .unique-carousel-item {
+        min-width: 25%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    .unique-carousel-item img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+    @keyframes unique-scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-100%); }
+    }
+
+
+    /* sessão 7 */
+
+    .custom-section {
+        padding: 60px 0;
+        color: #fff;
+    }
+    .custom-section h2 {
+        color: #fff;
+    }
+    .custom-section .widget-text p {
+        font-weight: 400;
+        color: #fff;
+    }
+    .custom-section .toggle-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px 0;
+        border-bottom: 1px solid #fff;
+    }
+    .custom-section .toggle-title a {
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+    .custom-section .toggle-title .toggle-icon {
+        font-size: 1.2em;
+        color: #FF9500;
+    }
+    .custom-section .toggle-content {
+        padding: 10px 0;
+    }
+    .custom-section .toggle-content ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .custom-section .toggle-content ul li {
+        padding: 5px 0;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    /* sessão 8 */
+
+    .custom-bonus-section {
+    /* background-image: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/Bordado-Livre-BG-MODS.jpg'); */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #4B1A1B;
+}
+
+.custom-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #FF9500;
+}
+
+.custom-subheading {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.bonus-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+
+
+.bonus-image img {
+    width: 100%;
+    height: auto;
+}
+
+.bonus-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.bonus-title {
+    font-size: 1.5em;
+    color: #FF9500;
+    margin-bottom: 10px;
+}
+
+.bonus-description {
+    font-size: 1em;
+    color: #333;
+}
+
+.bonus-price {
+    margin-top: 20px;
+}
+
+.original-price {
+    font-size: 1em;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discounted-price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF9500;
+}
+
+
+/* sessão 9 */
+
+.media-section {
+    background-color: #FFFFFF;
+    padding: 60px 0;
+    color: #333;
+}
+
+.media-heading {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #FF9500;
+}
+
+.media-subheading {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.media-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin-bottom: 30px;
+}
+
+
+
+.media-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 hero-section text-center">
+                <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/logo-bordado-livre.png" alt="Logo Bordado Livre" class="img-fluid mb-5">
+                <div class="row">
+                    <div class="col-md-6 text-left p-3">
+                        <h2>Aprenda tudo que precisa para produzir <span>os melhores Bordados</span> da sua região!</h2>
+                        <p>Junte-se aos <strong>mais de 20 mil alunos</strong> da Academia do Bordado com Curso Completo em <strong>vídeo aulas,</strong> <strong>Certificado de Conclusão e Grupo de Alunas Exclusivo</strong> para você iniciar o quanto antes.</p>
+                        <a href="https://pay.hotmart.com/D54153752R?checkoutMode=10" class="btn btn-lg mt-3">SIM, QUERO COMEÇAR AGORA!</a>
+                        <p class="pricing-info mt-3"><b>4x de R$10,71</b> ou R$ 39,90 à vista</p>
+                    </div>
+                    <div class="col-md-6 p-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tTPNwoSfvNA?controls=1&rel=0&playsinline=0&modestbranding=0&autoplay=0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- sessão 2 -->
+
+    <section class="highlight-section mt-2">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="elementor-icon-box">
+                        <div class="elementor-icon-box-icon">
+                            <span class="elementor-icon elementor-animation-grow-rotate">
+                                <img src="trofeu.svg" alt="Trofeu Icon" style="width: 60px; height: 60px;">
+                            </span>
+                        </div>
+                        <div class="elementor-icon-box-content">
+                            <h3 class="elementor-icon-box-title">
+                                <span>Aprendizado de Elite</span>
+                            </h3>
+                            <p class="elementor-icon-box-description">
+                                Prepare-se para mergulhar em um curso de máxima EXCELÊNCIA, apresentado através de aulas em alta definição. Estamos entregando a você a chave para o conhecimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="elementor-icon-box">
+                        <div class="elementor-icon-box-icon">
+                            <span class="elementor-icon elementor-animation-grow-rotate">
+                                <img src="foguete.svg" alt="Foguete Icon" style="width: 60px; height: 60px;">
+                            </span>
+                        </div>
+                        <div class="elementor-icon-box-content">
+                            <h3 class="elementor-icon-box-title">
+                                <span>Entrada Instantânea</span>
+                            </h3>
+                            <p class="elementor-icon-box-description">
+                                Nada de espera ou delongas. Assim que a sua inscrição é verificada, o acesso ao seu FUTURO BRILHANTE no mundo do Bordado Livre chega imediatamente ao seu e-mail.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="elementor-icon-box">
+                        <div class="elementor-icon-box-icon">
+                            <span class="elementor-icon elementor-animation-grow-rotate">
+                                <img src="certificado.svg" alt="Certificado Icon" style="width: 60px; height: 60px;">
+                            </span>
+                        </div>
+                        <div class="elementor-icon-box-content">
+                            <h3 class="elementor-icon-box-title">
+                                <span>Certificação Incluída</span>
+                            </h3>
+                            <p class="elementor-icon-box-description">
+                                E tem mais! Nós valorizamos o seu esforço e dedicação. Assim, oferecemos um lindo CERTIFICADO sem custos adicionais, que você acessa diretamente da sua área do aluno.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- sessão 3 -->
+
+    <section class="highlight-section-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-editor">
+                        <p class="fine-text">Academia do Bordado Livre</p>
+                    </div>
+                    <div class="heading">
+                        <h2>Descubra o universo do <span class="highlight">BORDADO</span> em um curso completo, que ensina desde os fundamentos <span class="highlight">até as técnicas mais sofisticadas.</span></h2>
+                    </div>
+                    <div class="text-editor">
+                        <p class="fine-text">Com aulas <strong>minuciosamente detalhadas, acesso imediato e um CERTIFICADO INCLUSO</strong>, preparamos você para criar os Bordados mais impressionantes.</p>
+                        <p><strong>Nosso Curso de Bordado Livre foi tecido com extremo carinho e precisão, para satisfazer as aspirações de todos que sonham em dominar a arte de fazer Bordados</strong>. Acreditamos que a habilidade não conhece fronteiras; por isso, convidamos tanto as iniciantes quanto as profissionais que buscam aperfeiçoar suas competências.</p>
+                        <p><strong>Nós criamos esta jornada pensando em VOCÊ.</strong> Queremos que você explore, aprenda e alcance resultados extraordinários, transformando sua paixão em um talento palpável em pouco tempo. Esteja preparada para surpreender a todos com seus Bordados Profissionais.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/img.png" alt="Imagem do Curso de Bordado" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- sessão 4 -->
+
+    <section class="student-work-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2><span class="highlight">Alguns trabalhos</span> de nossas alunas</h2>
+                    <p class="fine-text">Projetos reais desenvolvidos por nossas alunas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-01.jpg" alt="Trabalho 1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-02.jpg" alt="Trabalho 2">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-03.jpg" alt="Trabalho 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-04.jpg" alt="Trabalho 4">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-05.jpg" alt="Trabalho 5">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/work-alunas-06.jpg" alt="Trabalho 6">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens do carrossel conforme necessário -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sessão 5 -->
+
+    <section class="advantages-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2><span class="highlight">Veja as vantagens</span> do Curso de Bordado Livre</h2>
+                    <p class="fine-text spaced-text">Nunca foi tão fácil e empolgante mergulhar no universo dos Bordados</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="interactive-image">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/benef-bordado-01.png" alt="Inicie do Zero" class="img-fluid">
+                    </div>
+                    <h2 class="highlight">Inicie do Zero</h2>
+                    <p class="fine-text">Não se preocupe se você é novata total na arte de fazer Bordados. Nosso curso é projetado de forma didática e passo a passo, acolhendo todos os níveis de experiência.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="interactive-image">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/benef-bordado-02.png" alt="Evolua e Aprimore" class="img-fluid">
+                    </div>
+                    <h2 class="highlight">Evolua e Aprimore</h2>
+                    <p class="fine-text">Se você já trabalha na área ou já iniciou sua jornada com Bordado Livre, este curso é a chance perfeita para refinar suas técnicas e expandir seus conhecimentos.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="interactive-image">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/benef-bordado-03.png" alt="Atraia Clientes" class="img-fluid">
+                    </div>
+                    <h2 class="highlight">Atraia Clientes</h2>
+                    <p class="fine-text">Esta é a sua grande oportunidade de ingressar de forma correta em um dos mercados que mais crescem no momento. Pegue esse atalho e veja seus resultados explodirem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sessão6 -->
+    <section class="unique-testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Veja o que nossas alunas <span class="unique-highlight">dizem sobre o curso!</span></h2>
+                    <p class="unique-fine-text unique-spaced-text">Confira os depoimentos de nossas alunas!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="unique-carousel-container">
+                        <div class="unique-carousel">
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.06.jpeg" alt="Depoimento 1"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.05-3.jpeg" alt="Depoimento 2"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.02-1.jpeg" alt="Depoimento 3"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.03-3.jpeg" alt="Depoimento 4"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.03-1.jpeg" alt="Depoimento 5"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.02-2.jpeg" alt="Depoimento 6"></div>
+                            <!-- Duplicate items to create infinite loop -->
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.06.jpeg" alt="Depoimento 1"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.05-3.jpeg" alt="Depoimento 2"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.02-1.jpeg" alt="Depoimento 3"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.03-3.jpeg" alt="Depoimento 4"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.03-1.jpeg" alt="Depoimento 5"></div>
+                            <div class="unique-carousel-item"><img class="img-fluid" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-01-04-at-10.18.02-2.jpeg" alt="Depoimento 6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- sessão 7 -->
+
+    <section class="custom-section" style="background-image: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/Bordado-Livre-BG-MODS.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="widget-wrap">
+                        <div class="widget-heading">
+                            <h2>Uma Produção <span style="color:#FF9500">Spar:</span></h2>
+                        </div>
+                        <div class="widget-image">
+                            <img decoding="async" width="250" height="250" src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/Logo-Completa-Branca-PNG-1024x1024.png" class="img-fluid" alt="Logo Spar">
+                        </div>
+                        <div class="widget-text">
+                            <p>Descubra o incrível mundo do bordado na Academia do Bordado, uma produção da <strong>SPAR, a plataforma que conecta você ao conhecimento.</strong> Desenvolva suas habilidades criativas e mergulhe em um universo de cores, texturas e possibilidades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="widget-wrap">
+                        <div class="widget-heading">
+                            <h2>Veja o que você <span style="color:#FF9500">vai aprender no curso:</span></h2>
+                        </div>
+                        <div class="widget-toggle">
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module1" aria-expanded="false" aria-controls="module1">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 1 - Início</a>
+                                </div>
+                                <div id="module1" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Introdução ao Bordado Livre</li>
+                                        <li>Materiais e Onde Encontrá-los</li>
+                                        <li>Bônus: Grupo no Telegram</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module2" aria-expanded="false" aria-controls="module2">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 2 - Introdução para a Prática</a>
+                                </div>
+                                <div id="module2" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Bastidor e Agulhas</li>
+                                        <li>Suporte de Bastidor</li>
+                                        <li>Como Dar Nó na Linha</li>
+                                        <li>Bônus: Riscos para bordar</li>
+                                        <li>Bônus: Tabela de Cores DMC</li>
+                                        <li>Como Passar o Risco</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module3" aria-expanded="false" aria-controls="module3">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 3 – Guia de Pontos</a>
+                                </div>
+                                <div id="module3" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Ponto Haste</li>
+                                        <li>Ponto Atrás</li>
+                                        <li>Ponto Partido</li>
+                                        <li>Ponto Chaveado</li>
+                                        <li>Ponto Nó Francês</li>
+                                        <li>Ponto Cheio</li>
+                                        <li>Ponto Pirulito</li>
+                                        <li>Ponto Pintura de Agulha</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module4" aria-expanded="false" aria-controls="module4">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 4 – Pontos Diferenciados </a>
+                                </div>
+                                <div id="module4" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Ponto Coração</li>
+                                        <li>Ponto Folha</li>
+                                        <li>Ponto Margarida</li>
+                                        <li>Ponto Cestaria</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module5" aria-expanded="false" aria-controls="module5">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 5 – Aplicação dos Pontos</a>
+                                </div>
+                                <div id="module5" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Aplicando Ponto Haste</li>
+                                        <li>Aplicando Ponto Atrás</li>
+                                        <li>Aplicando Ponto Cheio</li>
+                                        <li>Aplicando Ponto Partido</li>
+                                        <li>Aplicando Ponto Nó Francês</li>
+                                        <li>Aplicando Ponto Chaveado</li>
+                                        <li>Aplicando Ponto Pirulito</li>
+                                        <li>Aplicando Ponto Pintura de Agulha</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module6" aria-expanded="false" aria-controls="module6">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 6 – Entretela Solúvel</a>
+                                </div>
+                                <div id="module6" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Aula 29 – Aplicando a Entretela</li>
+                                        <li>Aula 28 – Como Funciona a Entretela Solúvel?</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module7" aria-expanded="false" aria-controls="module7">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 7 – Adaptação</a>
+                                </div>
+                                <div id="module7" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Harmonia das Cores</li>
+                                        <li>Técnicas de Aquarela</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-item">
+                                <div class="toggle-title" data-toggle="collapse" data-target="#module8" aria-expanded="false" aria-controls="module8">
+                                    <span class="toggle-icon"><i class="fas fa-caret-down"></i></span>
+                                    <a>Módulo 8 – Desfecho</a>
+                                </div>
+                                <div id="module8" class="collapse toggle-content">
+                                    <ul>
+                                        <li>Treino Livre</li>
+                                        <li>Finalização do Bastidor</li>
+                                        <li>Como Calcular o Valor do Bordado</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- sessão 8 -->
+<section class="custom-bonus-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="custom-heading">E você ainda recebe <span class="highlight">02 Bônus especiais!</span></h2>
+                <p class="custom-subheading">Para acelerar ainda mais seus resultados</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="bonus-card">
+                    <div class="bonus-image">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/riscos-2.png" alt="Bônus 1: eBook de Riscos" class="img-fluid">
+                    </div>
+                    <div class="bonus-content">
+                        <h3 class="bonus-title">Bônus 1: eBook de Riscos</h3>
+                        <p class="bonus-description">Explore um mundo de possibilidades com nosso eBook exclusivo de riscos. Tenha acesso a todos os designs usados no curso, permitindo que você pratique e aprimore suas habilidades.</p>
+                        <div class="bonus-price">
+                            <p class="original-price"><s>R$ 35,90</s></p>
+                            <p class="discounted-price">Por: <big>GRÁTIS</big></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bonus-card">
+                    <div class="bonus-image">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/benef-mesclada-8-1.png" alt="Bônus 2: Tabela de Cores DMC" class="img-fluid">
+                    </div>
+                    <div class="bonus-content">
+                        <h3 class="bonus-title">Bônus 2: Tabela de Cores DMC</h3>
+                        <p class="bonus-description">Aprimore suas criações com a exclusiva tabela de cores das linhas DMC. Tenha em mãos a paleta completa de tons vibrantes e sutis para tornar suas peças de bordado verdadeiras obras de arte.</p>
+                        <div class="bonus-price">
+                            <p class="original-price"><s>R$ 19,90</s></p>
+                            <p class="discounted-price">Por: <big>GRÁTIS</big></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 9 -->
+
+<section class="media-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-12">
+                <h2 class="media-heading">Veja o que <span class="highlight">dizem na mídia</span> sobre Bordados</h2>
+                <p class="media-subheading">Confira o que falam sobre Bordado Livre</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="media-card">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/Camada-2.jpg" alt="Mídia 1" class="img-fluid media-image">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media-card">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/Camada-3.jpg" alt="Mídia 2" class="img-fluid media-image">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="media-card">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/Camada-1.jpg" alt="Mídia 3" class="img-fluid media-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
