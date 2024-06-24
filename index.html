@@ -5,372 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Academia do Bordado</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/bg-bordado-livre.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #4B1A1B;
-        }
-        .hero-section {
-            background-color: rgba(255, 255, 255, 0.4);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
-        }
-        .hero-section h2 span {
-            color: #FF9500;
-        }
-        .hero-section .btn {
-            background-color: #28a745;
-            color: #fff;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-        .hero-section .btn:hover {
-            background-color: #218838;
-            transform: scale(1.1);
-        }
-        .pricing-info {
-            /* font-weight: bold; */
-            font-size: 1.2em;
-            color: #4B1A1B;
-        }
-        .embed-responsive-item {
-            border-radius: 15px;
-            border: 2px solid #FF9500;
-        }
-
-        /* SECTION 2 */
-
-        .highlight-section {
-        background-color: #FFEDDF;
-        padding: 40px 0;
-    }
-    .highlight-section .elementor-icon-box-icon {
-        margin-bottom: 15px;
-    }
-    .highlight-section .elementor-icon {
-        display: inline-block;
-        width: 90px;
-        height: 90px;
-        text-align: center;
-        line-height: 80px;
-        background-color: #FF9500;
-        border-radius: 50%;
-        box-shadow: 0 0 20px rgb(255, 255, 255);
-        transition: transform 0.3s ease;
-    }
-    .highlight-section .elementor-icon-box:hover .elementor-icon {
-        transform: scale(1.1);
-    }
-    .highlight-section .elementor-icon-box-title {
-        font-size: 1.5em;
-        margin-bottom: 10px;
-        color: #FF9500;
-    }
-    .highlight-section .elementor-icon-box-description {
-        font-size: 1.1em;
-        color: #4B1A1B;
-    }
-
-
-    /* SESSÃO 3 */
-    .highlight-section-3 {
-        background-color: #fff;
-        padding: 40px 0;
-    }
-    .highlight-section-3 .fine-text {
-        /* font-weight: 300; Fonte fina */
-        color: #4B1A1B;
-        font-size: 1.1em;
-    }
-    .highlight-section-3 .heading h2 {
-        font-size: 2em;
-        color: #4B1A1B;
-    }
-    .highlight-section-3 .heading .highlight {
-        color: #FF9500;
-    }
-    .highlight-section-3 .text-editor p {
-        color: #4B1A1B;
-        font-size: 1em;
-    }
-    .highlight-section-3 .image-container img {
-        width: 100%;
-        height: auto;
-    }
-
-    /* sessão 4 */
+    <link rel="stylesheet" href="styles.css">
     
-    .student-work-section {
-        background-color: #FFEDDF;
-        padding: 40px 0;
-    }
-    .student-work-section .highlight {
-        color: #FF9500;
-    }
-    .student-work-section .fine-text {
-        font-weight: 300;
-        color: #4B1A1B;
-        font-size: 1.1em;
-    }
-    .student-work-section h2 {
-        font-size: 2em;
-        color: #4B1A1B;
-    }
-    .carousel-item img {
-        border-radius: 8px;
-        margin: 0 auto; /* Centraliza as imagens */
-    }
-
-
-    /* sessão 5 */
-
-    .advantages-section {
-        background-color: #fff;
-        padding: 40px 0;
-    }
-    .advantages-section .highlight {
-        color: #FF9500;
-    }
-    .advantages-section .fine-text {
-        font-weight: 300;
-        color: #4B1A1B;
-        font-size: 1.1em;
-    }
-    .advantages-section .spaced-text {
-        letter-spacing: 0.05em;
-    }
-    .advantages-section h2 {
-        font-size: 2em;
-        color: #4B1A1B;
-        margin-top: 20px;
-    }
-    .advantages-section p {
-        color: #4B1A1B;
-        font-size: 1.1em;
-    }
-    .interactive-image {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-    .interactive-image img {
-        transition: transform 0.3s ease, top 0.3s ease;
-        border-radius: 8px;
-        position: relative;
-    }
-    .interactive-image:hover img {
-        transform: translateY(-10px);
-    }
-
-/* sessão 6 */
-
-.unique-testimonial-section {
-        background-color: #FFEDDF;
-        padding: 40px 0;
-    }
-    .unique-testimonial-section .unique-highlight {
-        color: #FF9500;
-    }
-    .unique-testimonial-section .unique-fine-text {
-        font-weight: 300;
-        color: #4B1A1B;
-        font-size: 1.1em;
-    }
-    .unique-testimonial-section .unique-spaced-text {
-        letter-spacing: 0.05em;
-    }
-    .unique-testimonial-section h2 {
-        font-size: 2em;
-        color: #4B1A1B;
-    }
-    .unique-carousel-container {
-        overflow: hidden;
-        position: relative;
-    }
-    .unique-carousel {
-        display: flex;
-        animation: unique-scroll 20s linear infinite;
-    }
-    .unique-carousel-item {
-        min-width: 25%;
-        box-sizing: border-box;
-        padding: 0 10px;
-    }
-    .unique-carousel-item img {
-        border-radius: 8px;
-        width: 100%;
-        height: auto;
-    }
-    @keyframes unique-scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-100%); }
-    }
-
-
-    /* sessão 7 */
-
-    .custom-section {
-        padding: 60px 0;
-        color: #fff;
-    }
-    .custom-section h2 {
-        color: #fff;
-    }
-    .custom-section .widget-text p {
-        font-weight: 400;
-        color: #fff;
-    }
-    .custom-section .toggle-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        cursor: pointer;
-        padding: 10px 0;
-        border-bottom: 1px solid #fff;
-    }
-    .custom-section .toggle-title a {
-        color: #fff;
-        font-size: 1.1em;
-        font-weight: 400;
-    }
-    .custom-section .toggle-title .toggle-icon {
-        font-size: 1.2em;
-        color: #FF9500;
-    }
-    .custom-section .toggle-content {
-        padding: 10px 0;
-    }
-    .custom-section .toggle-content ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    .custom-section .toggle-content ul li {
-        padding: 5px 0;
-        color: #fff;
-        font-weight: 400;
-    }
-
-    /* sessão 8 */
-
-    .custom-bonus-section {
-    /* background-image: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/Bordado-Livre-BG-MODS.jpg'); */
-    background-size: cover;
-    background-position: center;
-    padding: 60px 0;
-    color: #4B1A1B;
-}
-
-.custom-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #FF9500;
-}
-
-.custom-subheading {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.bonus-card {
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s;
-}
-
-
-
-.bonus-image img {
-    width: 100%;
-    height: auto;
-}
-
-.bonus-content {
-    padding: 20px;
-    text-align: center;
-}
-
-.bonus-title {
-    font-size: 1.5em;
-    color: #FF9500;
-    margin-bottom: 10px;
-}
-
-.bonus-description {
-    font-size: 1em;
-    color: #333;
-}
-
-.bonus-price {
-    margin-top: 20px;
-}
-
-.original-price {
-    font-size: 1em;
-    color: #999;
-    text-decoration: line-through;
-}
-
-.discounted-price {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #FF9500;
-}
-
-
-/* sessão 9 */
-
-.media-section {
-    background-color: #FFFFFF;
-    padding: 60px 0;
-    color: #333;
-}
-
-.media-heading {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.highlight {
-    color: #FF9500;
-}
-
-.media-subheading {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.media-card {
-    background: #f9f9f9;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    margin-bottom: 30px;
-}
-
-
-
-.media-image {
-    width: 100%;
-    height: auto;
-    border-radius: 15px;
-}
-
-
-    </style>
 </head>
 <body>
 
@@ -820,6 +456,164 @@
     </div>
 </section>
 
+<!-- sessão 10 -->
+
+<section class="exclusive-group-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/img-bordado-grupo.png" alt="Grupo de Alunos" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-container">
+                    <p class="subheading">Grupo de Alunos no Telegram</p>
+                    <h2 class="main-heading"><span class="highlight">Grupo exclusivo</span> para alunos</h2>
+                    <p>Com a adesão ao Curso Academia do Bordado, você ganha ingresso imediato à nossa <strong>comunidade exclusiva de alunas</strong>. Este é um espaço vibrante e envolvente onde você poderá interagir com alunas de todo o Brasil!</p>
+                    <p>Aqui, você terá a chance de&nbsp;trocar ideias, sanar dúvidas e compartilhar inspirações&nbsp;com uma legião de&nbsp;<strong>apaixonados por Bordado Livre</strong>, assim como você.</p>
+                    <p>Aproveite essa chance única de construir conexões valiosas enquanto aprofunda seu conhecimento sobre Bordados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 11 -->
+
+<section class="certificate-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-container">
+                    <p class="subheading">Certificado Garantido</p>
+                    <h2 class="main-heading">Certificado de Conclusão Válido em <span class="highlight">todo território brasileiro</span> Incluso!</h2>
+                    <p>Você vai ter acesso a este lindo certificado, emitido pela <strong>Spar Educação Digital,</strong> disponível em sua área restrita após concluir o curso.</p>
+                    <p><strong>Certificado com carga horária, CNPJ e válido em todo território nacional em conformidade com o Decreto Presidencial N° 5.154.</strong></p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/certificado.png" alt="Certificado" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 12 -->
+
+<section class="guarantee-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/risco-zero-kefir.png" alt="Garantia 100% Satisfação" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-container">
+                    <p class="subheading">Garantia 100% Satisfação</p>
+                    <h2 class="main-heading">Experimente por <span class="highlight">7 Dias!</span></h2>
+                    <p><strong>Nós confiamos tanto na qualidade do nosso curso que estamos prontos para lhe oferecer uma garantia incondicional de 7 dias</strong>.</p>
+                    <p>Se você sentir que o conteúdo do curso não corresponde ao que descrevemos aqui, nós <strong>devolveremos seu dinheiro</strong> sem qualquer questionamento ou burocracia!</p>
+                    <p>Estamos continuamente adicionando novas aulas e atualizando o conteúdo. Portanto, sua jornada de aprendizado com a gente é uma aventura sempre em evolução!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 13 -->
+
+<section class="trust-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                    <h2 class="main-heading"><span class="highlight">Em dúvida</span> sobre comprar pela internet?</h2>
+                    <p class="subheading">Adquirir o Curso Academia do Bordado é Fácil e Confiável</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <div class="icon">
+                        <img src="trofeu.svg" alt="Dados Pessoais Seguros" class="img-fluid">
+                    </div>
+                    <div class="icon-box-content">
+                        <p>Dados pessoais seguros e não são compartilhados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <div class="icon">
+                        <img src="diamante.svg" alt="Pagamento Seguro" class="img-fluid">
+                    </div>
+                    <div class="icon-box-content">
+                        <p>Pagamento automático, rápido e seguro.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="icon-box">
+                    <div class="icon">
+                        <img src="certificado.svg" alt="Acesso Imediato" class="img-fluid">
+                    </div>
+                    <div class="icon-box-content">
+                        <p>Acesso enviado para seu email Imediatamente.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 14 -->
+
+<section class="special-offer-section" style="background-image: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/Bordado-Livre-BG-MODS.jpg');">
+    <div class="elementor-background-overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-12">
+                <h2 class="special-heading"><span class="highlight">Oferta Especial</span> Por Tempo Limitado!</h2>
+                <h2 class="special-subheading">de <s>R$ 97,90</s> Por Apenas</h2>
+                <h2 class="special-price">4x de <span class="price-highlight">R$ 10,71*</span></h2>
+                <h2 class="special-price">ou à vista por R$ 39,90</h2>
+                <div class="button-wrapper">
+                    <a class="special-button" href="https://pay.hotmart.com/D54153752R?checkoutMode=10">
+                        SIM, QUERO COMEÇAR AGORA!
+                    </a>
+                </div>
+                <div class="payment-image">
+                    <a href="https://pay.hotmart.com/D54153752R?checkoutMode=10">
+                        <img src="https://escoladobordadolivre.com/wp-content/uploads/2023/08/payments-logo-1.png" alt="Métodos de Pagamento" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- sessão 15 -->
+
+<section class="footer-section">
+    <div class="container">
+        <div class="row justify-content-center text-center">
+            <div class="col-auto">
+                <h2 class="footer-link"><a href="https://escoladobordadolivre.com/termos/">Termos &amp; Condições</a></h2>
+            </div>
+            <div class="col-auto">
+                <h2 class="footer-link"><a href="https://escoladobordadolivre.com/privacidade/">Políticas de Privacidade</a></h2>
+            </div>
+            <div class="col-12">
+                <h2 class="footer-text">Academia do Bordado - Todos os direitos Reservados.<br>SPAR EDUCAÇÃO DIGITAL LTDA - CNPJ Nº 49.943.006/0001-91</h2>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -827,5 +621,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
 
 

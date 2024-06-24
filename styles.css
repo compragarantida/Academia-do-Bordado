@@ -1,0 +1,698 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/bg-bordado-livre.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #4B1A1B;
+}
+.hero-section {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.hero-section h2 span {
+    color: #FF9500;
+}
+.hero-section .btn {
+    background-color: #28a745;
+    color: #fff;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+.hero-section .btn:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+.pricing-info {
+    /* font-weight: bold; */
+    font-size: 1.2em;
+    color: #4B1A1B;
+}
+.embed-responsive-item {
+    border-radius: 15px;
+    border: 2px solid #FF9500;
+}
+
+/* SECTION 2 */
+
+.highlight-section {
+background-color: #FFEDDF;
+padding: 40px 0;
+}
+.highlight-section .elementor-icon-box-icon {
+margin-bottom: 15px;
+}
+.highlight-section .elementor-icon {
+display: inline-block;
+width: 90px;
+height: 90px;
+text-align: center;
+line-height: 80px;
+background-color: #FF9500;
+border-radius: 50%;
+box-shadow: 0 0 20px rgb(255, 255, 255);
+transition: transform 0.3s ease;
+}
+.highlight-section .elementor-icon-box:hover .elementor-icon {
+transform: scale(1.1);
+}
+.highlight-section .elementor-icon-box-title {
+font-size: 1.5em;
+margin-bottom: 10px;
+color: #FF9500;
+}
+.highlight-section .elementor-icon-box-description {
+font-size: 1.1em;
+color: #4B1A1B;
+}
+
+
+/* SESSÃO 3 */
+.highlight-section-3 {
+background-color: #fff;
+padding: 40px 0;
+}
+.highlight-section-3 .fine-text {
+/* font-weight: 300; Fonte fina */
+color: #4B1A1B;
+font-size: 1.1em;
+}
+.highlight-section-3 .heading h2 {
+font-size: 2em;
+color: #4B1A1B;
+}
+.highlight-section-3 .heading .highlight {
+color: #FF9500;
+}
+.highlight-section-3 .text-editor p {
+color: #4B1A1B;
+font-size: 1em;
+}
+.highlight-section-3 .image-container img {
+width: 100%;
+height: auto;
+}
+
+/* sessão 4 */
+
+.student-work-section {
+background-color: #FFEDDF;
+padding: 40px 0;
+}
+.student-work-section .highlight {
+color: #FF9500;
+}
+.student-work-section .fine-text {
+font-weight: 300;
+color: #4B1A1B;
+font-size: 1.1em;
+}
+.student-work-section h2 {
+font-size: 2em;
+color: #4B1A1B;
+}
+.carousel-item img {
+border-radius: 8px;
+margin: 0 auto; /* Centraliza as imagens */
+}
+
+/* sessão 5 */
+
+.advantages-section {
+background-color: #fff;
+padding: 40px 0;
+}
+.advantages-section .highlight {
+color: #FF9500;
+}
+.advantages-section .fine-text {
+font-weight: 300;
+color: #4B1A1B;
+font-size: 1.1em;
+}
+.advantages-section .spaced-text {
+letter-spacing: 0.05em;
+}
+.advantages-section h2 {
+font-size: 2em;
+color: #4B1A1B;
+margin-top: 20px;
+}
+.advantages-section p {
+color: #4B1A1B;
+font-size: 1.1em;
+}
+.interactive-image {
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+}
+.interactive-image img {
+transition: transform 0.3s ease, top 0.3s ease;
+border-radius: 8px;
+position: relative;
+}
+.interactive-image:hover img {
+transform: translateY(-10px);
+}
+
+/* sessão 6 */
+
+.unique-testimonial-section {
+background-color: #FFEDDF;
+padding: 40px 0;
+}
+.unique-testimonial-section .unique-highlight {
+color: #FF9500;
+}
+.unique-testimonial-section .unique-fine-text {
+font-weight: 300;
+color: #4B1A1B;
+font-size: 1.1em;
+}
+.unique-testimonial-section .unique-spaced-text {
+letter-spacing: 0.05em;
+}
+.unique-testimonial-section h2 {
+font-size: 2em;
+color: #4B1A1B;
+}
+.unique-carousel-container {
+overflow: hidden;
+position: relative;
+}
+.unique-carousel {
+display: flex;
+animation: unique-scroll 20s linear infinite;
+}
+.unique-carousel-item {
+min-width: 25%;
+box-sizing: border-box;
+padding: 0 10px;
+}
+.unique-carousel-item img {
+border-radius: 8px;
+width: 100%;
+height: auto;
+}
+@keyframes unique-scroll {
+0% { transform: translateX(0); }
+100% { transform: translateX(-100%); }
+}
+
+/* sessão 7 */
+
+.custom-section {
+padding: 60px 0;
+color: #fff;
+}
+.custom-section h2 {
+color: #fff;
+}
+.custom-section .widget-text p {
+font-weight: 400;
+color: #fff;
+}
+.custom-section .toggle-title {
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+padding: 10px 0;
+border-bottom: 1px solid #fff;
+}
+.custom-section .toggle-title a {
+color: #fff;
+font-size: 1.1em;
+font-weight: 400;
+}
+.custom-section .toggle-title .toggle-icon {
+font-size: 1.2em;
+color: #FF9500;
+}
+.custom-section .toggle-content {
+padding: 10px 0;
+}
+.custom-section .toggle-content ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.custom-section .toggle-content ul li {
+padding: 5px 0;
+color: #fff;
+font-weight: 400;
+}
+
+/* sessão 8 */
+
+.custom-bonus-section {
+/* background-image: url('https://escoladobordadolivre.com/wp-content/uploads/2023/08/Bordado-Livre-BG-MODS.jpg'); */
+background-size: cover;
+background-position: center;
+padding: 60px 0;
+color: #4B1A1B;
+}
+
+.custom-heading {
+font-size: 2.5em;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.highlight {
+color: #FF9500;
+}
+
+.custom-subheading {
+font-size: 1.2em;
+margin-bottom: 40px;
+}
+
+.bonus-card {
+background: rgba(255, 255, 255, 0.9);
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+margin-bottom: 30px;
+transition: transform 0.3s;
+}
+
+
+.bonus-image img {
+width: 100%;
+height: auto;
+}
+
+.bonus-content {
+padding: 20px;
+text-align: center;
+}
+
+.bonus-title {
+font-size: 1.5em;
+color: #FF9500;
+margin-bottom: 10px;
+}
+
+.bonus-description {
+font-size: 1em;
+color: #333;
+}
+
+.bonus-price {
+margin-top: 20px;
+}
+
+.original-price {
+font-size: 1em;
+color: #999;
+text-decoration: line-through;
+}
+
+.discounted-price {
+font-size: 1.2em;
+font-weight: bold;
+color: #FF9500;
+}
+
+
+/* sessão 9 */
+
+.media-section {
+background-color: #FFFFFF;
+padding: 60px 0;
+color: #333;
+}
+
+.media-heading {
+font-size: 2.5em;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.highlight {
+color: #FF9500;
+}
+
+.media-subheading {
+font-size: 1.2em;
+margin-bottom: 40px;
+}
+
+.media-card {
+background: #f9f9f9;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+margin-bottom: 30px;
+}
+
+
+.media-image {
+width: 100%;
+height: auto;
+border-radius: 15px;
+}
+
+/* sessão 10 */
+
+.exclusive-group-section {
+background: #FFEDDF;
+padding: 60px 0;
+}
+
+.image-container {
+text-align: center;
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.text-container {
+color: #333;
+padding: 20px;
+font-family: Arial, sans-serif; /* Utilize a fonte que preferir */
+font-weight: 300; /* Traço fino para a maioria do texto */
+}
+
+.subheading {
+font-size: 1.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 10px;
+}
+
+.main-heading {
+font-size: 2.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 20px;
+}
+
+.highlight {
+color: #FF9500;
+font-weight: 700; /* Negrito para destaque */
+}
+
+.text-container p {
+font-size: 1.1em;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.text-container p strong {
+font-weight: 700; /* Negrito para textos em strong */
+}
+
+/* sessão 11 */
+
+.certificate-section {
+background: #fff;
+padding: 60px 0;
+}
+
+.text-container {
+color: #333;
+font-family: Arial, sans-serif; /* Utilize a fonte que preferir */
+font-weight: 300; /* Traço fino para a maioria do texto */
+padding: 20px;
+}
+
+.subheading {
+font-size: 1.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 10px;
+}
+
+.main-heading {
+font-size: 2.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 20px;
+}
+
+.highlight {
+color: #FF9500;
+font-weight: 700; /* Negrito para destaque */
+}
+
+.text-container p {
+font-size: 1.1em;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.text-container p strong {
+font-weight: 700; /* Negrito para textos em strong */
+}
+
+.image-container {
+text-align: center;
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+/* sessão 12 */
+
+.guarantee-section {
+background: #FFEDDF;
+padding: 60px 0;
+}
+
+.image-container {
+text-align: center;
+}
+
+.image-container img {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+
+.text-container {
+color: #333;
+font-family: Arial, sans-serif; /* Utilize a fonte que preferir */
+font-weight: 300; /* Traço fino para a maioria do texto */
+padding: 20px;
+}
+
+.subheading {
+font-size: 1.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 10px;
+}
+
+.main-heading {
+font-size: 2.5em;
+font-weight: 300; /* Traço fino */
+margin-bottom: 20px;
+}
+
+.highlight {
+color: #FF9500;
+font-weight: 700; /* Negrito para destaque */
+}
+
+.text-container p {
+font-size: 1.1em;
+line-height: 1.6;
+margin-bottom: 15px;
+}
+
+.text-container p strong {
+font-weight: 700; /* Negrito para textos em strong */
+}
+
+/* sessão 13 */
+
+.trust-section {
+background: #ffffff;
+padding: 60px 0;
+}
+
+.trust-section .main-heading {
+font-size: 2.5em;
+font-weight: 300;
+color: #333;
+}
+
+.trust-section .highlight {
+color: #FF9500;
+font-weight: 700;
+}
+
+.trust-section .subheading {
+font-size: 1.2em;
+margin-bottom: 40px;
+color: #666;
+}
+
+.icon-box {
+text-align: center;
+background: #FFEDDF;
+border-radius: 10px;
+padding: 30px;
+margin-bottom: 30px;
+transition: transform 0.3s ease;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box:hover {
+transform: translateY(-10px);
+}
+
+.icon-box .icon {
+margin-bottom: 20px;
+}
+
+.icon-box img {
+width: 80px;
+height: auto;
+filter: invert(48%) sepia(87%) saturate(2975%) hue-rotate(4deg) brightness(99%) contrast(106%);
+}
+
+.icon-box-content p {
+font-size: 1.1em;
+color: #333;
+font-weight: 300;
+}
+
+/* sessão 14 */
+
+.special-offer-section {
+background-size: cover;
+background-position: center;
+position: relative;
+padding: 60px 20px;
+}
+
+.special-offer-section .elementor-background-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+}
+
+.special-offer-section .container {
+position: relative;
+z-index: 1;
+}
+
+.special-offer-section .special-heading,
+.special-offer-section .special-subheading,
+.special-offer-section .special-price {
+color: #ffffff;
+margin: 20px 0;
+font-family: 'Montserrat', sans-serif;
+text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.special-offer-section .highlight {
+color: #FF9500;
+}
+
+.special-offer-section .price-highlight {
+background-color: #FF9500;
+color: #fff;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+.special-offer-section .button-wrapper {
+margin: 30px 0;
+}
+
+.special-offer-section .special-button {
+background-color: #28a745;
+color: #fff;
+padding: 15px 30px;
+font-size: 1.5em;
+font-weight: bold;
+border-radius: 50px;
+text-transform: uppercase;
+text-decoration: none;
+transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.special-offer-section .special-button:hover {
+background-color: #218838;
+transform: translateY(-5px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.special-offer-section .payment-image {
+margin-top: 20px;
+}
+
+.special-offer-section .payment-image img {
+max-width: 50%; /* Reduced size */
+height: auto;
+display: block;
+margin: 0 auto;
+}
+
+.special-offer-section h2.special-heading {
+font-size: 2.5em;
+}
+
+.special-offer-section h2.special-subheading {
+font-size: 2em;
+}
+
+.special-offer-section h2.special-price {
+font-size: 1.8em;
+}
+
+/* sessão 15 */
+
+.footer-section {
+background-color: #340404;
+padding: 5px 20px;
+color: #fff;
+font-family: 'Montserrat', sans-serif;
+}
+
+.footer-section .container {
+max-width: 1140px;
+margin: 0 auto;
+}
+
+.footer-section .row {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.footer-section .footer-link {
+margin: 10px;
+}
+
+.footer-section .footer-link a {
+color: #FF9500;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+font-size: 0.5em;
+}
+
+.footer-section .footer-link a:hover {
+color: #fff;
+}
+
+.footer-section .footer-text {
+/* margin-top: 20px; */
+font-size: 0.7em;
+font-weight: normal;
+text-align: center;
+}
